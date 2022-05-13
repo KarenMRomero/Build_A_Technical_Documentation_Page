@@ -17,6 +17,7 @@ li {
 p {
     line-height: 30px;
     font-size: 3vw;
+    max-width: 90vw;
 }
 
 #navbar {
@@ -63,9 +64,8 @@ nav {
 }
 
 
-span {
-    display: block;
-    max-width: 50%;
+pre {
+    white-space: pre-wrap;
 }
 
 
