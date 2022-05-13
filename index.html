@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="https://cdn4.iconfinder.com/data/icons/general-office/91/General_Office_07-256.png"
+		type="image/x-icon">
+	<link rel="stylesheet" href="documentation_style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Roboto+Mono&display=swap"
+		rel="stylesheet">
+	<title>Accesibility Documentation</title>
+</head>
+
+
+<body>
+	<nav id="navbar">
+		<header>Accessibility Documentation</header>
+		<ul>
+			<li><a class="nav-link" href="#accessibility">Accessibility</a></li>
+			<li>
+				<a class="nav-link" href="#overview">Overview</a>
+			</li>
+			<li>
+				<a class="nav-link" href="#prerequisites">Prerequisites</a>
+			</li>
+			<li><a class="nav-link" href="#guides">Guides</a></li>
+			<li><a class="nav-link" href="#assessments">Assessments</a></li>
+			<li><a class="nav-link" href="#see_also">See Also</a></li>
+		</ul>
+	</nav>
+	<main id="main-doc">
+
+		<section class="main-section" id="accessibility">
+			<header>Accessibility</header>
+			<article>
+				<p>Learning some HTML, CSS, and JavaScript is useful if you want to become a web developer. Beyond
+					mechanical use, it's important to learn how to use these technologies responsibly so that all
+					readers might use your creations on the web. To help you achieve this, this module will cover
+					general best practices (which are demonstrated throughout the HTML, CSS, and JavaScript topics),
+					cross browser testing, and some tips on enforcing accessibility from the start. We'll cover
+					accessibility in special detail.</p>
+			</article>
+		</section>
+
+		<section class="main-section" id="overview">
+			<header>Overview</header>
+			<article>
+				<p>When someone describes a site as "accessible", they mean that any user can use all its features and
+					content, regardless of how the user accesses the web — even and especially users with physical or
+					mental impairments.</p>
+				<ul>
+					<li>Sites should be accessible to keyboard, mouse, and touch screen users, and any other way users
+						access the web, including screen readers and voice assistants like Alexa and Google Home.</li>
+					<li>Applications should be understandable and usable by people regardless of auditory, visual,
+						physical, or cognitive abilities.</li>
+					<li>Sites should also not cause harm: web features like motion can cause migraines or epileptic
+						seizures.</li>
+				</ul>
+				<p>By default, HTML is accessible, if used correctly. Web accessibility involves ensuring that content
+					remains accessible, regardless of who and how the web is accessed.</p>
+				<p>The Firefox Accessibility Inspector is a very useful tool for checking out accessibility issues on
+					web pages. The following video provides a nice introduction to it:</p>
+
+				<iframe src="https://www.youtube.com/embed/7mqqgIxX_NU" title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+				<div class="guide">
+					<header>Looking to become a front-end web developer?</header>
+					<p>We have put together a course that includes all the essential information you need to work
+						towards your goal.</p>
+					<a href="https://developer.mozilla.org/en-US/docs/Learn/Front-end_web_developer" target="_blank">Get
+						started!</a>
+				</div>
+			</article>
+		</section>
+
+		<section class="main-section" id="prerequisites">
+			<header>Prerequisites</header>
+			<article>
+				<p>To get the most out of this module, it would be a good idea to either work through at least the first
+					two modules of the HTML, CSS, and JavaScript topics, or perhaps even better, work through the
+					relevant parts of the accessibility module as you work through the related technology topics.</p>
+				<div>
+					<p>Note: If you are working on a computer/tablet/other devices where you don't have the ability to
+						create your own files, you can try out most of the code examples in an online coding program
+						such as JSBin or Glitch.</p>
+				</div>
+			</article>
+		</section>
+
+		<section class="main-section" id="guides">
+			<header>Guides</header>
+			<article>
+				<p>
+					<a target="_blank"
+						href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility">What
+						is accessibility?</a>
+					This article starts off the module with a good look at what accessibility is — this includes what
+					groups of people we need to consider and why, what tools different people use to interact with the
+					web, and how we can make accessibility part of our web development workflow.
+				</p>
+
+				<p>
+					<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML">HTML: A
+						good basis for accessibility</a>
+					A great deal of web content can be made accessible just by making sure the correct HTML elements are
+					always used for the correct purpose. This article looks in detail at how HTML can be used to ensure
+					maximum accessibility.
+				</p>
+				<p>The following are examples of code with html accessibility</p>
+
+				<div class="code-example">
+					<pre class="brush: html notranslate">
+<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span><span class="token punctuation">&gt;</span></span>Play video<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+</code>
+</pre>
+				</div>
+
+
+				<div class="code-example">
+					<pre class="brush: html notranslate">
+<code>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Header<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">&gt;</span></span>
+                  
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;!-- main navigation in here --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span>
+                  
+<span class="token comment">&lt;!-- Here is our page's main content --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>main</span><span class="token punctuation">&gt;</span></span>
+                  
+<span class="token comment">&lt;!-- It contains an article --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>article</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>Article heading<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+                  
+    <span class="token comment">&lt;!-- article content in here --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>article</span><span class="token punctuation">&gt;</span></span>
+                  
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>aside</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>Related<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+                  
+    <span class="token comment">&lt;!-- aside content in here --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>aside</span><span class="token punctuation">&gt;</span></span>
+                  
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>main</span><span class="token punctuation">&gt;</span></span>
+                  
+<span class="token comment">&lt;!-- And here is our main footer that is used across all the pages of our website --&gt;</span>
+                  
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>footer</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;!-- footer content in here --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>footer</span><span class="token punctuation">&gt;</span></span>
+</code>
+</pre>
+				</div>
+
+				<p>
+					<a target="_blank"
+						href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/CSS_and_JavaScript">CSS and
+						JavaScript accessibility best practices</a>
+					CSS and JavaScript, when used properly, also have the potential to allow for accessible web
+					experiences, but if misused they can significantly harm accessibility. This article outlines some
+					CSS and JavaScript best practices that should be considered to ensure that even complex content is
+					as accessible as possible.
+				</p>
+
+				<p>
+				<header>Emphasized text</header>
+				Inline markup that confers specific emphasis to the text that it wraps:
+				</p>
+				<div class="code-example">
+					<pre class="brush: html notranslate">
+<code>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>The water is <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span><span class="token punctuation">&gt;</span></span>very hot<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">&gt;</span></span>.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Water droplets collecting on surfaces is called <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">&gt;</span></span>condensation<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">&gt;</span></span>.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+				</div>
+
+				<p>You might want to add some simple coloring to your emphasized text:</p>
+
+				<div class="code-example">
+					<pre class="brush: css notranslate">
+<code>
+<span class="token selector">strong, em</span> <span class="token punctuation">{</span>
+<span class="token property">color</span><span class="token punctuation">:</span> #a60000<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+				</div>
+
+				<p>
+				<header>Abbreviations</header>
+				An element that allows an abbreviation, acronym, or initialization to be associated with its expansion:
+				</p>
+
+				<div class="code-example">
+					<pre class="brush: html notranslate"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Web content is marked up using <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>abbr</span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Hypertext Markup Language<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>HTML<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>abbr</span><span class="token punctuation">&gt;</span></span>.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+                </code></pre>
+				</div>
+
+				<p>Again, you might want to style it in some simple way:</p>
+
+				<div class="code-example">
+					<pre class="brush: css notranslate">
+                    <code>
+                    <span class="token selector">abbr</span> <span class="token punctuation">{</span>
+                    <span class="token property">color</span><span class="token punctuation">:</span> #a60000<span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                    </code></pre>
+				</div>
+
+
+
+
+				<p>
+					<a target="_blank"
+						href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/WAI-ARIA_basics">WAI-ARIA
+						basics</a>
+					Following on from the previous article, sometimes making complex UI controls that involve unsemantic
+					HTML and dynamic JavaScript-updated content can be difficult. WAI-ARIA is a technology that can help
+					with such problems by adding in further semantics that browsers and assistive technologies can
+					recognize and use to let users know what is going on. Here we'll show how to use it at a basic level
+					to improve accessibility.
+				</p>
+
+				<p>
+					<a target="_blank"
+						href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/Multimedia">Accessible
+						multimedia</a>
+					Another category of content that can create accessibility problems is multimedia — video, audio, and
+					image content need to be given proper textual alternatives, so they can be understood by assistive
+					technologies and their users. This article shows how.
+				</p>
+
+				<p>
+					<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/Mobile">Mobile
+						accessibility</a>
+					With web access on mobile devices being so popular, and popular platforms such as iOS and Android
+					having fully-fledged accessibility tools, it is important to consider the accessibility of your web
+					content on these platforms. This article looks at mobile-specific accessibility considerations.
+				</p>
+
+			</article>
+		</section>
+
+		<section class="main-section" id="assessments">
+			<header>Assessments</header>
+			<article>
+				<p><a target="_blank"
+						href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/Accessibility_troubleshooting">Accessibility
+						troubleshooting</a>In the assessment for this module, we present to you a simple site with
+					several accessibility issues that you need to diagnose and fix.</p>
+			</article>
+		</section>
+
+		<section class="main-section" id="see_also">
+			<header>See also</header>
+			<article>
+
+				<ul>
+					<li><a target="_blank"
+							href="https://egghead.io/courses/start-building-accessible-web-applications-today">Start
+							Building Accessible Web Applications Today</a>-an excellent series of video tutorials by
+						Marcy Sutton.</li>
+					<li><a target="_blank" href="https://dequeuniversity.com/resources/">Deque University
+							resources</a>-includes code examples, screen reader references, and other useful resources.
+					</li>
+					<li><a target="_blank" href="https://webaim.org/resources/">WebAIM resources</a>-includes guides,
+						checklists, tools, and more.</li>
+					<li><a target="_blank" href="https://www.w3.org/WAI/ER/tools/">Web Accessibility Evaluation Tools
+							List</a>-includes a list of web accessibility evaluation tools.</li>
+				</ul>
+
+			</article>
+		</section>
+
+	</main>
+
+
+
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
