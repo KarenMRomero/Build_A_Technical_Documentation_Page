@@ -30,7 +30,7 @@ p {
     max-width: 90vw;
 }
 
-li {}
+
 
 #navbar {
     position: fixed;
@@ -93,8 +93,8 @@ pre {
     :target::before {
         content: '';
         display: block;
-        height: 190px;
-        margin-top: -190px;
+        height: 200px;
+        margin-top: -200px;
     }
 
 
@@ -217,6 +217,73 @@ pre {
     .guide {
         margin: 10vh auto 10vh auto;
     }
+
+
+}
+
+@media (min-width: 1000px) {
+
+    header {
+        font-size: 2vw;
+    }
+
+    #navbar header {
+        font-size: 1.5vw;
+    }
+
+    p {
+        font-size: 1.2vw;
+        line-height: 3.5vh;
+    }
+
+    li {
+        font-size: 1.1vw;
+        line-height: 4vh;
+    }
+
+
+    #navbar ul {
+        padding-left: 10%;
+        margin-top: 20%;
+    }
+
+
+    #navbar li {
+        margin: 10%;
+        font-size: 1vw;
+    }
+
+    #navbar header {
+        padding-top: 6%;
+        text-align: center;
+    }
+
+
+
+    #main-doc {
+        margin-top: 0;
+
+    }
+
+
+    iframe {
+        width: 40vw;
+        min-height: 20vw;
+        margin-left: 21vw;
+    }
+
+
+    .guide {
+        width: 40vw;
+        margin: 10vh auto 10vh auto;
+    }
+
+    pre {
+        width: 40vw;
+        font-size: 1vw;
+        padding: 1vw 1vw 1vw 1vw;
+    }
+
 
 
 }
